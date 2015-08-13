@@ -16,6 +16,8 @@
     "tests"
   ],
   "dependencies": {
-    "bootstrap": "~3.3.5"
+    "bootstrap": "~3.3.5",
+    "shower-bright": "~1.0.11",
+    "shower-core": "~1.0.7"
   }
 }
