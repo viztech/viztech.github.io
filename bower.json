@@ -2,7 +2,8 @@
   "name": "Viztech",
   "version": "0.0.1",
   "authors": [
-    "siqister <siqi.zhu@gmail.com>"
+    "siqister <siqi.zhu@gmail.com>",
+    "arminakvn <armin.akhavan@gmail.com>"
   ],
   "description": "Home page of ARTG 5330 Visualization Technologies",
   "main": "index.html",
