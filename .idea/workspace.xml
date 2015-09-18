@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="2ed47ea3-ae14-4b82-98d9-e1feedc5b6e8" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="viztech.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,7 +29,7 @@
       <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="43" column="75" selection-start="2121" selection-end="2121" vertical-scroll-proportion="0.39297125" vertical-offset="571" max-vertical-offset="1254">
+            <state line="48" column="72" selection-start="2366" selection-end="2366" vertical-scroll-proportion="0.54472846" vertical-offset="571" max-vertical-offset="1254">
               <folding />
             </state>
           </provider>
@@ -122,7 +123,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1440" height="790" extended-state="6" />
+    <frame x="0" y="22" width="1440" height="790" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -166,6 +167,13 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
+        <state line="43" column="75" selection-start="2121" selection-end="2121" vertical-scroll-proportion="0.0" vertical-offset="571" max-vertical-offset="1254">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
         <state line="41" column="20" selection-start="1772" selection-end="1772" vertical-scroll-proportion="0.0" vertical-offset="494" max-vertical-offset="494">
           <folding />
         </state>
@@ -180,7 +188,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="75" selection-start="2121" selection-end="2121" vertical-scroll-proportion="0.39297125" vertical-offset="571" max-vertical-offset="1254">
+        <state line="48" column="72" selection-start="2366" selection-end="2366" vertical-scroll-proportion="0.54472846" vertical-offset="571" max-vertical-offset="1254">
           <folding />
         </state>
       </provider>
