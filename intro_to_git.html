@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>ARTG5330 Visualization Technologies in the Northeastern IDV Program</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=680, user-scalable=no">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<link rel="stylesheet" href="bower_components/shower-bright/styles/screen.css">
+</head>
+<body class="list">
+	<!--
+		Debug class on <body> enables
+		cyan grid on slides
+		-->
+	<header class="caption">
+		<h1>Introduction to workflow using Git</h1>
+		<!-- <p><a href="">Yours Truly</a>, Famous Inc.</p> -->
+	</header>
+	<!-- <section class="slide"> 
+		<h2>Distributed version control system</h2>
+		<ul>
+		</ul>
+	</section>-->
+	<section class="slide visited"><div> 
+		
+		<!-- <h2>git</h2> -->
+			
+
+					<p>
+						<strong>Why git? </strong>
+					 Google docs are good examples of how keeping track of changes and figuring out the most updated version of a project could be very frustrating when multiple people working collaboratively and making changes at the same time.
+					</p>
+				
+			<figure>
+				<blockquote>
+			<p><a href="https://git-scm.com/" target="_blank">git</a> is a free open source <i>distributed version control</i> system to manage multiple versions of a document/project.
+			It tracks changes to any group of documents, files, or folders over time.</p>
+			</blockquote>
+			<figcaption>Learn more about Distributed Version Controls Systems <a href="https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control" target="_blanck"> here.</a> </figcaption>
+			</figure>
+			
+		<!-- <img src="pictures/wide.png" alt=""> -->
+	</div></section>
+	<section class="slide" ><div>
+		<p>If you have not already install git, you could do so for <a href="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git#Installing-on-Mac" target="_blank">mac</a>, <a href="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git#Installing-on-Windows" target="_blank">windows,</a> or <a href="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git#Installing-on-Linux" target="_blank"> linux</a></p>	
+		<ol>
+			<p><strong>What is GitHub?</strong> <a href="https://guides.github.com/activities/hello-world/" target="_blanck">GitHub</a> is a platform for hosting and collaborating on projects. GitHub uses git technologies and stores the projects on cloud.</p> 
+			<p> If you don't already have one, please create an account on <a href="https://github.com/">GitHub.com</a>
+			</p>
+		</ol>
+
+	</div></section>
+	<section class="slide"><div>
+		 <strong> How to use the <i>command line? </i></strong>
+		<p> <a href="https://en.wikipedia.org/wiki/Command-line_interface">Command line </a>interface is a means of intracting with your computer through lines of text. On Mac OS the command line is refered to as <i>Terminal</i> and on windows it is called <i>Command Prompt</i>. If you are on a mac, you can open the Terminal from your <code>Applications > Utilities > </code>folder. On windows, the prompt is accessable via <code>Programs > Accessories >. </code>
+	</div></section>
+	<section class="slide">
+		<div>
+			<p>
+				Some useful commands (<i>$ represents Mac Terminal</i>) <small>For more see <a href="http://blog.teamtreehouse.com/introduction-to-the-mac-os-x-command-line">link</a></small>:
+			</p>
+				<pre>
+					<code style="line-height: 0.7"><mark>$ pwd </mark><mark class="comment"> path to current director </mark>
+					</code>
+					<code style="line-height: 0.7"><mark>$ ls </mark><mark class="comment"> lists the files and folders in the current directory </mark>
+					</code>
+					<code style="line-height: 0.7"><mark>$ cd </mark><mark class="comment"> change directory back to home folder </mark>
+					</code>
+					<code style="line-height: 0.7"><mark>$ cd [some-directory-name]</mark><mark class="comment"> change directory to a given folder </mark>
+					</code>
+				</pre>
+				<p><i>and for Windows:</i></p>
+				<pre>
+					<code style="line-height: 0.7"><mark>chdir </mark><mark class="comment"> path to current director </mark>
+					</code>
+					<code style="line-height: 0.7"><mark>dir </mark><mark class="comment"> lists the files and folders in the current directory </mark>
+					</code>
+					<code style="line-height: 0.7"><mark>cd.. </mark><mark class="comment"> change directory back up to containing folder </mark>
+					</code>
+					<code style="line-height: 0.7"><mark>cd [some-directory-name]</mark><mark class="comment"> change directory to a given folder </mark>
+					</code>
+				</pre>
+				
+			</p></div></section>
+	<section class="slide"><div>
+		<strong>This is how we use git:</strong>
+		
+		<ol>
+			<!-- <li>Any folder on your computer could become a git repository if you run <code>git init</code> in it's containing folder in terminal</li> -->
+			
+			<li>Make a copy of the project's <i> Master Version </i> in your GitHub acount. <i>In GitHub this is called <a href="https://help.github.com/articles/fork-a-repo/" target="_blank"> fork</a>.</i>
+			</li>
+			<li class="next">
+				Download the project to your local machine. <i>In GitHub this is called creating a local clone of the repository.</i>
+			</li>
+			<li class="next">
+				Work on the project: add, edit, etc.
+			</li>
+			<li class="next">
+				Save your changes to your local repo, which is called<i> commiting. </i>
+			</li>
+			<li class="next">
+				Upload and your changes to your GitHub repo. In GitHub this is called to <i> push.</i>
+			</li>
+			<li class="next">
+				Propose changes to the <i> Master Repository</i> which is called <i> making a pull request.</i>
+			</li>
+
+		</ol>
+		
+	</div></section>
+	<section class="slide"><div>
+		<p>
+		<img src="images/git_intro.png" alt="" class="place">
+	</p>
+	</div></section>
+	
+<!-- 	<p class="badge"><a href="https://github.com/shower/shower">Fork me on Github</a></p>
+ -->	<!--
+		To hide progress bar from entire presentation
+		just remove “progress” element.
+		-->
+	<div class="progress"><div></div></div>
+	<script src="bower_components/shower-core/shower.min.js"></script>
+	<!-- Copyright © 2014 Yours Truly, Famous Inc. -->
+</body>
+</html>
