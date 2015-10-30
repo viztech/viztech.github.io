@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="2ed47ea3-ae14-4b82-98d9-e1feedc5b6e8" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="viztech.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,7 +28,7 @@
       <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="120" column="183" selection-start="6302" selection-end="6302" vertical-scroll-proportion="0.6054313" vertical-offset="1901" max-vertical-offset="2774">
+            <state line="122" column="37" selection-start="6374" selection-end="6374" vertical-scroll-proportion="0.6054313" vertical-offset="1939" max-vertical-offset="2774">
               <folding />
             </state>
           </provider>
@@ -202,7 +201,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="120" column="183" selection-start="6302" selection-end="6302" vertical-scroll-proportion="0.6054313" vertical-offset="1901" max-vertical-offset="2774">
+        <state line="122" column="37" selection-start="6374" selection-end="6374" vertical-scroll-proportion="0.6054313" vertical-offset="1939" max-vertical-offset="2774">
           <folding />
         </state>
       </provider>
