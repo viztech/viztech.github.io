@@ -2,23 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2ed47ea3-ae14-4b82-98d9-e1feedc5b6e8" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/syllabus.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/git_intro.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/git_intro_.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/git_intro__.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/intro_to_git.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/slides/week-10.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/slides/week-11.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/slides/week-2.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/slides/week-3.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/slides/week-4.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/slides/week-5.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/slides/week-6.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/slides/week-7.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/slides/week-8.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/slides/week-9.pdf" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="viztech.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -44,7 +28,7 @@
       <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="50" selection-start="1345" selection-end="1345" vertical-scroll-proportion="0.33438987" vertical-offset="329" max-vertical-offset="1460">
+            <state line="33" column="0" selection-start="1589" selection-end="1589" vertical-scroll-proportion="0.41269842" vertical-offset="400" max-vertical-offset="1420">
               <folding />
             </state>
           </provider>
@@ -252,7 +236,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="50" selection-start="1345" selection-end="1345" vertical-scroll-proportion="0.33438987" vertical-offset="329" max-vertical-offset="1460">
+        <state line="33" column="0" selection-start="1589" selection-end="1589" vertical-scroll-proportion="0.41269842" vertical-offset="400" max-vertical-offset="1420">
           <folding />
         </state>
       </provider>
