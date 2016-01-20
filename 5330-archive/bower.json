@@ -1,0 +1,24 @@
+{
+  "name": "Viztech",
+  "version": "0.0.1",
+  "authors": [
+    "siqister <siqi.zhu@gmail.com>",
+    "arminakvn <armin.akhavan@gmail.com>"
+  ],
+  "description": "Home page of ARTG 5330 Visualization Technologies",
+  "main": "index.html",
+  "license": "MIT",
+  "homepage": "viztech.github.io",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.5",
+    "shower-bright": "~1.0.11",
+    "shower-core": "~1.0.7"
+  }
+}
