@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ARTG6900: Supplementary 1</title>
+
+    <link href="../../bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet"/>
+</head>
+<body>
+    <div class="container">
+        <h1>Clearing up Some Lingering Confusion</h1>
+        <section>
+            <h3 class="page-header">DOM element vs. <code>selection</code></h3>
+            <div class="row">
+            <div class="col-md-8">
+                <h4>DOM element/node</h4>
+                <p>One thing we haven't made a huge deal about in class is the difference between a DOM element and a d3 <code>selection</code>. Here is the difference. Suppose we have an HTML snippet like this:</p>
+                <pre><code class="language-html" data-lang="html">&lt;div id=&quot;plot&quot;&gt;
+    &lt;svg&gt;
+    &lt;circle&gt;&lt;/circle&gt;
+    &lt;/svg&gt;
+&lt;/div&gt;</code></pre>
+                <p>Here, <code>&lt;svg&gt;</code>, <code>&lt;div&gt;</code>, <code>&lt;circle&gt;</code> are all <em>DOM elements</em> or, interchangably, <em>DOM nodes</em>. You can access and interact with these DOM elements via JavaScript's built-in functions. For example, to access the <code>&lt;div&gt;</code> node, we can use:</p>
+                <pre>document.getElementById('plot') //<em>returns the DOM node</em></pre>
+                <p>DOM nodes have built in properties like <code>clientWidth</code>, and these can be accessed directly from the node:</p>
+                <pre>document.getElementById('plot').clientWidth //<em>returns a number</em></pre>
+                <h4>selection</h4>
+                <p>However, by themselves, plain DOM nodes don't come with many built-in functions. We <em>can't</em>, for example, set attributes and styles directly by using <code>.style()</code> or <code>.attr()</code>. The code below doesn't work:</p>
+                <pre>document.getElementById('plot').style('width','400px'); //WRONG!!</pre>
+                <p>BUT, by turning plain DOM nodes into a d3 <code>selection</code>, a wealth of functions become available. To do that, we use <code>d3.select()</code> or <code>d3.selectAll()</code>:</p>
+                <pre>var node = document.getElementById('plot');
+<span class="nt">d3.select</span>(node) //<em>this is a selection!</em>
+    .style('width','400px'); </pre>
+                <p>If the above looked a little weird to you, that's because we are used to creating selection using CSS selectors. Both methods work:</p>
+                <pre>d3.select('#plot').style('width','400px');</pre>
+                <blockquote>
+                    <code>d3.select()</code>/<code>d3.selectAll()</code> + <strong>DOM node</strong> = <strong>d3 <a href="https://github.com/mbostock/d3/wiki/Selections">selection</a></strong>
+                </blockquote>
+            </div>
+            <div class="col-md-4">
+                <h4>Good to know...</h4>
+                <p>Full list of functions available to <code>selection</code> are <a href="https://github.com/mbostock/d3/wiki/API-Reference#selections">here:</a></p>
+                <p>Besides the ones we commonly use, like</p>
+                <ul>
+                    <li><code>selection.attr()</code></li>
+                    <li><code>selection.data()</code>/<code>selection.datum()</code></li>
+                    <li><code>selection.append()</code></li>
+                </ul>
+                <p>...we also need to be proficient with these</p>
+                <ul>
+                    <li><code>selection.filter()</code></li>
+                    <li><code>selection.each()</code></li>
+                    <li><code>selection.call()</code></li>
+                    <li><code>selection.node()</code></li>
+                    <li><code>selection.on()</code></li>
+                </ul>
+                <p><strong>Please take a moment to review, and let me know if anything doesn't make sense.</strong></p>
+            </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
