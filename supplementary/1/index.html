@@ -59,15 +59,83 @@
             </div>
             </div>
         </section>
-        <section>
             <section>
                 <h3 class="page-header"><code>selection.call()</code>: how it works, and why</h3>
                 <div class="row">
                     <div class="col-md-8">
-                        Coming soon...
+                        <p>First of all, <em>review the previous section on what a selection is</em>. Then take a look at the <a href="https://github.com/mbostock/d3/wiki/Selections#call">API reference</a> for <code>selection.call()</code></p>
+                        <p>It should be clear from looking at the API reference: <code> selection.call(function<em>[, arguments…]</em>)</code> that
+                            <ol>
+                                <li><code>selection.call()</code> expects one argument, a <code>function</code> (we'll ignore the <code>arguments</code> for now)</li>
+                                <li>That <code>function</code> expects one argument, which is the selection itself</li>
+                            </ol>
+                        </p>
+                        <p>Not as convoluted as it sounds--let's see how it works:</p>
+                        <pre>var <span style="color:#ed6a43">circle</span> = svg.append('circle')
+    .attr('r',3)
+    .call(<span style="color:#03afeb">colorMeRed</span>);
+
+function <span style="color:#03afeb">colorMeRed</span>(<span style="color:#ed6a43">selection</span>){
+    selection
+        .style('fill','red')
+        .style('stroke','white')
+        .style('stroke-width','1px');
+}
+                        </pre>
+                        <p>Here, the <strong style="color:#ed6a43">circles</strong> selection calls the <strong style="color:#03afeb">colorMeRed</strong> function, passing into the function the <strong style="color:#ed6a43">circles</strong> selection. The end result is the same as:</p>
+                        <pre>var <span style="color:#ed6a43">circle</span> = svg.append('circle')
+    .attr('r',3)
+    .style('fill','red')
+    .style('stroke','white')
+    .style('stroke-width','1px');
+                        </pre>
+                        <h4>Why use <code>selection.call()</code>?</h4>
+                        <p>While the above example is trivial, <code>selection.call()</code> is useful when you want to apply the same operations repeatedly to different selections. Suppose we want to change the fill, stroke and stroke-width of several different selections; using <code>selection.call()</code>, we can put all the tedious code in a function, and call it repeatedly.</p>
+                        <pre>svg.append('rect').call(colorMeRed);
+svg.append('path').call(colorMeRed);
+svg.selectAll('.green-circles').call(colorMeRed);
+...
+//<em>no need to use .style(...).style(...).style(...) in a row</em>
+                        </pre>
                     </div>
                 </div>
             </section>
+        <section>
+            <h3 class="page-header"><code>selection.each()</code></h3>
+            <div class="row">
+                <div class="col-md-8">
+                    <p>We know that a <code>selection</code> can refer/contain multiple DOM elements:</p>
+<pre>var circles = d3.selectAll('circle')
+    .data([43,22,56,39,100]) //<em>array of 5 elements</em>
+    .enter()
+    .append('circle');
+</pre>
+                    <p>In the above example, the <strong>circles</strong> variable is a selection that refers to 5 DOM elements.</p>
+                    <h4><code>selection.each()</code> lets you access individual elements in a selection</h4>
+                    <p><code>selection.each(function)</code> lets you access each element individually. This function allows two arguments:
+                        <ol>
+                            <li>First argument <code>d</code> is the datum bound to the current element</li>
+                            <li>Second argument <code>i</code> is the index/order of the current element</li>
+                            <li>Not an argument, but <code>this</code> refers to the current DOM element itself</li>
+                        </ol>
+                        Continuing the example above:
+                    </p>
+
+<pre>
+circles.each(function(<span style="color:#ed6a43">d</span>,<span style="color:#ed6a43">i</span>){
+    //<em>This function will run 5 times</em>
+
+    console.log(d); //<em>in succession, this will log 43, 22, 56, 39, 100</em>
+    console.log(i); //<em>in turn, this will log 0, 1, 2, 3, 4</em>
+
+    d3.select(<span style="color:#03afeb">this</span>).attr('r',d/2); //<em>this will set the 'r' attr of each circle to be 1/2 of its datum</circle></em>
+});
+</pre>
+                    <h4>Tricky meaning of <code>this</code></h4>
+                    <p>Within the callback function for <code>selection.each()</code>, <code>this</code> refers to the individual DOM element. Remember, <strong>DOM element is NOT the same as selection</strong>. To turn it into a selection, we still had to use <code>d3.select()</code> to unlock d3's full capabilities.</p>
+                </div>
+            </div>
+        </section>
     </div>
 </body>
 </html>
