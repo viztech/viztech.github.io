@@ -38,7 +38,7 @@
       <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="111" column="83" selection-start="6625" selection-end="6625" vertical-scroll-proportion="0.42833334" vertical-offset="1852" max-vertical-offset="2736">
+            <state line="115" column="9" selection-start="6711" selection-end="6711" vertical-scroll-proportion="0.36261982" vertical-offset="1958" max-vertical-offset="3002">
               <folding />
             </state>
           </provider>
@@ -93,7 +93,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -114,6 +113,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -122,14 +122,6 @@
     <property name="DefaultHtmlFileTemplate" value="Html5" />
   </component>
   <component name="RunManager">
-    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
-      <option name="VMOptions" />
-      <option name="arguments" />
-      <option name="filePath" />
-      <option name="scope" value="ALL" />
-      <option name="testName" />
-      <method />
-    </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
       <option name="VMOptions" />
       <option name="arguments" />
@@ -140,15 +132,23 @@
       <option name="showConsoleOnStdOut" value="false" />
       <method />
     </configuration>
+    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
+      <option name="VMOptions" />
+      <option name="arguments" />
+      <option name="filePath" />
+      <option name="scope" value="ALL" />
+      <option name="testName" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" singleton="true" config-file="">
+      <envs />
+      <method />
+    </configuration>
     <configuration default="true" type="JSTestDriver:ConfigurationType" factoryName="JsTestDriver">
       <setting name="configLocationType" value="CONFIG_FILE" />
       <setting name="settingsFile" value="" />
       <setting name="serverType" value="INTERNAL" />
       <setting name="preferredDebugBrowser" value="CHROME" />
-      <method />
-    </configuration>
-    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" singleton="true" config-file="">
-      <envs />
       <method />
     </configuration>
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
@@ -212,6 +212,20 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/supplementary/1/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="106" column="105" selection-start="7102" selection-end="7102" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2793">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="111" column="83" selection-start="6625" selection-end="6625" vertical-scroll-proportion="0.0" vertical-offset="1852" max-vertical-offset="2736">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/supplementary/1/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="106" column="105" selection-start="7102" selection-end="7102" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2793">
@@ -347,7 +361,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="111" column="83" selection-start="6625" selection-end="6625" vertical-scroll-proportion="0.42833334" vertical-offset="1852" max-vertical-offset="2736">
+        <state line="115" column="9" selection-start="6711" selection-end="6711" vertical-scroll-proportion="0.36261982" vertical-offset="1958" max-vertical-offset="3002">
           <folding />
         </state>
       </provider>
